@@ -1,0 +1,8 @@
+package grafo.recursos;
+
+public interface OperacionesGD {
+
+	public void muestraDijkstra(int startVertex);
+	public void muestraFloyd();
+
+}
