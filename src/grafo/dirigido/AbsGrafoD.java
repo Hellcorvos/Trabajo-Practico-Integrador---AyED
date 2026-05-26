@@ -1,5 +1,6 @@
 package grafo.dirigido;
 import grafo.contenedores.*;
+import grafo.recursos.OperacionesGD;
 
 public abstract class AbsGrafoD extends AbsGrafo implements OperacionesGD{
 	
