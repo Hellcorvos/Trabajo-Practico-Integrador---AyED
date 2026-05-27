@@ -29,6 +29,7 @@ public class GrafoDirigido extends AbsGrafoD{
 				}
 			}
 		} 
+		scanner.close();
    	
 	}
 	

@@ -135,9 +135,9 @@ public abstract class AbsGrafoD extends AbsGrafo implements OperacionesGD{
 			for(int i=0;i<ordenGrafo;i++){
 				for(int j=0;j<ordenGrafo;j++){
 					if(((Double)matrizCostoF.devolver(i, k)).doubleValue()+((Double)matrizCostoF.devolver(k, j)).doubleValue()<((Double)matrizCostoF.devolver(i, j)).doubleValue()){
-						costo=new Double(((Double)matrizCostoF.devolver(i, k)).doubleValue()+((Double)matrizCostoF.devolver(k, j)).doubleValue());
+						costo=Double.valueOf(((Double)matrizCostoF.devolver(i, k)).doubleValue()+((Double)matrizCostoF.devolver(k, j)).doubleValue());
 						matrizCostoF.actualizar(costo, i, j);
-						matrizCaminoF.actualizar(new Integer(k), i, j);//para obtener el camino de Floyd.
+						matrizCaminoF.actualizar(Integer.valueOf(k), i, j);//para obtener el camino de Floyd.
 					}
 				}
 			}

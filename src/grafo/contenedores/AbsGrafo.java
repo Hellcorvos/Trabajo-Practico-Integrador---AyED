@@ -30,7 +30,7 @@ public abstract class AbsGrafo implements OperacionesGrafo {
 		boolean marcado;
 		double currCost;
 		
-		listaMarca.reemplazar(new Boolean(true), v);//marco el vertice v como visitado
+		listaMarca.reemplazar(Boolean.valueOf(true), v);//marco el vertice v como visitado
 		System.out.println("vertice "+ v);
 		for (int w=0;w<getOrden();w++){
 			marcado=(boolean)listaMarca.devolver(w);
