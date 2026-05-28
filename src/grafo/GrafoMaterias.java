@@ -62,7 +62,7 @@ public class GrafoMaterias {
                 String etiqueta = valor == 1.0 ? "R" : "A";
                 
                 System.out.println(origen.getNombre() 
-                    + " → " + destino.getNombre() 
+                    + " -> " + destino.getNombre() 
                     + " (" + etiqueta + ")");
             }
         }

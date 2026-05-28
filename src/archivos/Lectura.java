@@ -53,9 +53,9 @@ public class Lectura {
                 linea = linea.trim();
                 if (linea.isEmpty()) continue;
 
-                String[] p        = linea.split(";");
-                int idMateria      = Integer.parseInt(p[0].trim()); // la que necesita correlativa
-                String tipo        = p[1].trim();                   // R o A
+                String[] p = linea.split(";");
+                int idMateria = Integer.parseInt(p[0].trim()); // la que necesita correlativa
+                String tipo = p[1].trim();                   // R o A
                 int idCorrelativa  = Integer.parseInt(p[2].trim()); // la que debe tener cursada
                 
                 int valor = 0;

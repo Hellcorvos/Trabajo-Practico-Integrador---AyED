@@ -1,6 +1,6 @@
 package modelo;
 
-public class Alumno {
+public class Alumno {//un alumno tiene un legajo, un nombre y un arreglo de estados académicos para cada materia del plan de estudios (índice = posición en el grafo)
     private int legajo;
     private String nombre;
     private EstadoAcademico[] estadoMaterias; // índice = posición en el grafo
