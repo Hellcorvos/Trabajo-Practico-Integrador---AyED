@@ -13,6 +13,38 @@ public class Solicitud {
         this.fecha = fecha;
         this.observaciones = observaciones;
     }
+
+    public Alumno getAlumno() {
+        return this.alumno;
+    }
+
+    public void setAlumno(Alumno alumno){
+        this.alumno = alumno;
+    }
+
+    public Materia getMateriaSolicitada(){
+        return this.materiaSolicitada;
+    }
+
+    public void setMateriaSolicitada(Materia MateriaSolicitada){
+        this.materiaSolicitada = MateriaSolicitada;
+    }
+
+    public String getFecha(){
+        return this.fecha;
+    }
+
+    public void setFecha(String fecha){
+        this.fecha = fecha;
+    }
+
+    public String getObservaciones(){
+        return this.observaciones;
+    }
+
+    public void setObservaciones(String observaciones){
+        this.observaciones = observaciones;
+    }
     
 
 }

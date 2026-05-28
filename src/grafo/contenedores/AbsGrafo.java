@@ -45,8 +45,12 @@ public abstract class AbsGrafo implements OperacionesGrafo {
 		for (int w=0;w<getOrden();w++){
 			marcado=(boolean)listaMarca.devolver(w);
 			currCost=(double)this.getMatrizCosto().devolver(v,w);
+<<<<<<< HEAD
 			if (currCost!=getInfinito() && !marcado){//si hay conexion entre el vertice v y el vertice w, y el vertice w no ha sido visitado,
 			                                    // entonces se llama a la funcion bpf para visitar el vertice w y sus adyacentes
+=======
+			if (currCost!=infinito && !marcado){//si hay conexion entre el vertice v y el vertice w, y el vertice w no ha sido visitado, entonces se llama a la funcion bpf para visitar el vertice w y sus adyacentes
+>>>>>>> d029b7a (Arreglo de clases)
 				bpf(listaMarca,w);
 			}
 		}
