@@ -57,8 +57,15 @@ public class Lectura {
                 int idMateria      = Integer.parseInt(p[0].trim()); // la que necesita correlativa
                 String tipo        = p[1].trim();                   // R o A
                 int idCorrelativa  = Integer.parseInt(p[2].trim()); // la que debe tener cursada
+                
+                int valor = 0;
+                switch (tipo) {
+                    case "R": valor=1; break;// requisito (debe estar Regular) 
+                    case "A": valor=2; break;// antirequisito (debe estar Aprobada)
+                    default:continue; // se salta esta línea si la materia no es requisito
+                }   
 
-                int valor = tipo.equals("R") ? 1 : 2;// R = requisito (debe estar aprobada), 
+                //int valor = tipo.equals("R") ? 1 : 2;// R = requisito (debe estar aprobada), 
                 // A = antirequisito (no debe estar aprobada)
                 // arista va de idCorrelativa → idMateria
                 grafoMaterias.agregarCorrelativa(idCorrelativa, idMateria, valor);// se agrega la correlativa al grafo

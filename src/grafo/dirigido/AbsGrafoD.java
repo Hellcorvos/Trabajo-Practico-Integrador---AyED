@@ -182,5 +182,28 @@ public abstract class AbsGrafoD extends AbsGrafo implements OperacionesGD{
 			System.out.print(" |");
 		}
 	}
-	
+
+	/*			ZONA DE PRUEBAS				*/
+
+	public void muestraGrafoS(){
+		//Considerando el grafo cargado junto con sus respectias correlativas
+		double currCost;
+		for (int i=0; i<getOrden();i++){
+			for (int j=0; j<getOrden();j++){
+				if (i!=j){
+					currCost=(double)this.getMatrizCosto().devolver(i, j);
+					switch ((int)currCost) {
+                        case 1:
+                            System.out.println("Materia:" + i + " necesita materia: " + j + "->" + "Regular")
+                            ;break;
+                        case 2:
+                            System.out.println("Materia:" + i + " necesita materia: " + j + "->" + "Aprobada");
+                            break;
+                        default:
+                            break;
+                    }
+				}
+			}			
+		}		
+	}
 }
