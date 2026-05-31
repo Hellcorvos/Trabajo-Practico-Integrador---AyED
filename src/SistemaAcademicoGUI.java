@@ -1,9 +1,10 @@
-package archivos;
+
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import archivos.Lectura;
 
 import grafo.GrafoMaterias;
 import modelo.*;
